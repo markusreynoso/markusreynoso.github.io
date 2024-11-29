@@ -1,0 +1,501 @@
+@font-face {
+    font-family: "Medium";
+    src: url("fonts/NeueHaasDisplayMediu.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Regular";
+    src: url("fonts/NeueHaasDisplayRoman.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Light Italic";
+    src: url("fonts/NeueHaasDisplayLightItalic.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Light";
+    src: url("fonts/NeueHaasDisplayLight.ttf") format("truetype");
+}
+
+:root {
+    --dark: #181818;
+    --light: #f3f3f3;
+    --accent: #f5402c;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main-wrapper {
+    background-color: var(--dark);
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+h1 {
+    font-family: "Medium";
+    color: var(--light);
+    font-size: 10vw;
+    line-height: 80%;
+    text-align: center;
+    letter-spacing: -0.03em;
+}
+
+h2 {
+    font-family: "Medium";
+}
+
+h3 {
+    font-family: "Light Italic";
+    line-height: 1em;
+    font-size: 2em;
+    color: var(--dark);
+    margin-bottom: 1vh;
+    margin-left: 8vw;
+}
+
+a h3 {
+    font-family: "Light Italic";
+    font-size: 2em;
+    color: var(--dark);
+    transition: color 0.2s;
+}
+
+a h3:visited {
+    color: var(--accent);
+}
+
+a h3:hover {
+    color: var(--accent);
+}
+
+a h3:active {
+    color: var(--accent);
+}
+
+
+p {
+    font-family: "Regular";
+    font-size: 0.8em;
+}
+
+body {
+    min-width: 320px;
+}
+
+#main-wrapper {}
+
+#landing-div {
+    position: relative;
+    background-color: var(--dark);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 30px;
+    transform-style: preserve-3d;
+    /* z-index: -1; */
+    transform: translateZ(-20px) scale(3);
+}
+
+#socials-tray {
+    display: flex;
+    width: 85vw;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30vh;
+}
+
+.socials {
+    font-family: "Light";
+    font-size: 0.8em;
+    color: var(--light);
+}
+
+.socials a {
+    font-family: "Light";
+    color: var(--light);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.socials a:hover {
+    color: var(--accent);
+}
+
+
+#name-title {
+    font-size: 20vw;
+    margin-bottom: 20vh;
+}
+
+#logo {
+    width: 8vw;
+}
+
+#main-section {
+    position: relative;
+    background-color: var(--light);
+    padding-top: 10vh;
+    padding-left: 0;
+    z-index: 1;
+    margin-bottom: 30vh;
+    padding-bottom: 10vh;
+}
+
+#about-me-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-me-text {
+    text-align: center;
+    width: 80vw;
+    margin-bottom: 30px;
+}
+
+#about-me-title {
+    margin-bottom: 20vh;
+    letter-spacing: -0.05em;
+    font-size: 3em;
+}
+
+#projects-title {
+    font-size: 3em;
+    position: relative;
+    left: 5%;
+    letter-spacing: -0.05em;
+    margin-left: 5vw;
+    margin-bottom: -10vh;
+}
+
+.project-div {
+    width: 100vw;
+    margin-top: 15vh;
+}
+
+.project-text-div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.project-info-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 2vh;
+}
+
+.project-info {
+    font-family: "Light";
+}
+
+.project-desc {
+    width: 80%;
+    margin-bottom: 10vh;
+}
+
+.project-graphic-div {
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+
+
+#sokoban-gif-3{
+    width: 70vw;
+    margin-bottom: 3vh;
+}
+
+#sokoban-gif-2{
+    width: 70vw;
+}
+
+#sokoban-gif-1{
+    border: 2px solid var(--dark);
+    height: auto;
+    width: 80vw;
+}
+
+#mlp-pic-1{
+    width: 80vw;
+    height: auto;
+}
+
+#dashboard-pic-map{
+    width: 60vw;
+    height: auto;
+}
+
+#dashboard-gif-1{
+    width: 80vw;
+    height: auto;
+}
+
+
+#dashboard-pic-line{
+    width: 80vw;
+    height: auto;
+}
+
+#experience-section {
+    position: relative;
+    width: 100vw;
+    transform-style: preserve-3d;
+    /* z-index: -1; */
+    transform: translateZ(-10px) scale(1.5);
+}
+
+#experiences-title {
+    color: var(--light);
+    position: relative;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 20vh;
+}
+
+.experience-card {
+    width: 100vw;
+    background-color: var(--light);
+}
+
+.experience-card:last-child {
+    margin-bottom: 60vh;
+}
+
+.experience-div {
+    padding: 5vw;
+    margin-top: 15vh;
+}
+
+.experience-text-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-role{
+    margin-bottom: 2vh;
+    margin-left: -0.1vw;
+}
+
+.experience-info-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 10vh;
+}
+
+.experience-info {
+    font-family: "Light";
+    font-size: 1em;
+}
+
+.experience-desc{
+    font-size: 1.5em;
+}
+
+#end-section{
+    height: 100vh;
+    background-color: var(--light);
+    transform-style: preserve-3d;
+    z-index: 0;
+    transform: translateZ(-5px) scale(1.5);
+}
+
+
+@media (min-width: 1025px) { /*-------------------PC-------------------*/
+    p {
+        font-family: "Regular";
+        font-size: 1.2em;
+    }
+
+    #socials-tray {
+        margin-bottom: 25vh;
+    }
+
+    .socials {
+        font-family: "Light";
+        font-size: 1vw;
+        color: var(--light);
+    }
+
+    #name-title {
+        font-size: 10vw;
+        margin-bottom: 10vh;
+    }
+
+    #logo {
+        width: auto;
+        height: 5vh;
+    }
+
+    #about-me-div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 5vw;
+    }
+
+    #about-me-text {
+        text-align: justify;
+        width: 50vw;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    #about-me-title {
+        margin-bottom: 20vh;
+        letter-spacing: -0.05em;
+        font-size: 9em;
+    }
+
+    #main-section {
+        margin-bottom: 80vh;
+        padding-bottom: 20vh;
+    }
+
+    #projects-title {
+        font-size: 10em;
+        letter-spacing: -0.05em;
+        position: relative;
+        margin-left: 3vw;
+    }
+
+    h3 {
+        font-size: 5em;
+        margin-bottom: 5vh;
+        max-width: 60vw;
+        word-wrap: break-word;
+        line-height: 0.9em;
+    }
+
+    a h3 {
+        font-family: "Light Italic";
+        font-size: 5em;
+        color: var(--dark);
+        transition: color 0.2s;
+    }
+
+    .project-div {
+        margin-top: 40vh;
+    }
+
+    .project-text-div {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 12vh;
+    }
+
+    .project-info-div {
+        justify-content: space-between;
+        width: 40%;
+        margin-right: 10vw;
+    }
+
+    .project-desc {
+        margin-bottom: 50vh;
+    }
+
+    .project-graphic-div {
+        margin-top: -20vh;
+        margin-bottom: 30vh;
+    }
+
+    #sokoban-graphic-div-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+    
+    #sokoban-gif-3{
+        width: auto;
+        height: 80vh;
+        margin-left: 3vw;
+    }
+    
+    #sokoban-gif-2{
+        width: auto;
+        height: 80vh;
+    }
+
+    #sokoban-gif-1{
+        height: 80vh;
+        width: auto;
+    }
+
+    #mlp-pic-1{
+        width: 45vw;
+        height: auto;
+    }
+
+    #experiences-title {
+        font-size: 12em;
+        letter-spacing: -0.03em;
+        margin-bottom: 60vh;
+    }
+
+    .experience-card{
+        margin-bottom: 40vh;
+        height: 110vh;
+        z-index: -1;
+    }
+
+    .experience-card:last-child {
+        margin-bottom: 120vh;
+    }
+
+    .experience-role{
+        margin-bottom: 13vh;
+    }
+
+    .experience-text-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .experience-info-div {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 150%;
+        margin-right: 1vw;
+    }
+
+    .experience-info{
+        font-size: 1.5em;
+    }
+
+    .experience-desc {
+    }
+}
