@@ -78,6 +78,10 @@ h3 {
     margin-left: 8vw;
 }
 
+h3::selection {
+    background-color: var(--accent);
+}
+
 a h3 {
     font-family: "Light Italic";
     font-size: 2em;
@@ -101,6 +105,14 @@ a h3:active {
 p {
     font-family: "Regular";
     font-size: 0.8em;
+}
+
+p::selection{
+    background-color: var(--accent);
+}
+
+.page-anchor{
+    user-select: none;
 }
 
 body {
@@ -285,6 +297,9 @@ body {
     outline-color: var(--accent);
 }
 
+a .project-graphic{
+    user-select: none;
+}
 
 .project-graphic {
     width: 100%;
