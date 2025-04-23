@@ -1,0 +1,56 @@
+.landing>* {
+    opacity: 0;
+    animation: fade-in 1.5s linear 0.5s forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.bg {
+    animation: parallax-bg linear;
+    animation-timeline: scroll(root);
+}
+
+@keyframes parallax-bg {
+    to {
+        transform: translateY(300vh);
+    }
+}
+
+.role-card {
+    transition: 0.1s ease-in-out;
+}
+
+.role-card:hover {
+    transform: translateY(-8px);
+}
+
+.bi-arrow-right {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.overlay {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.thumbnail-container:hover .bi-arrow-right {
+    opacity: 100%;
+    transform: translateX(50px);
+}
+
+.thumbnail-container:hover .overlay {
+    opacity: 0.4;
+}
+
+.thumbnail-container:hover {
+    border: var(--accent) 3px solid;
+}

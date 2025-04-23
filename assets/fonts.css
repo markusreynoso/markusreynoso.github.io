@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Medium";
+    src: url("fonts/NeueHaasDisplayMediu.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Regular";
+    src: url("fonts/NeueHaasDisplayRoman.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Regular Italic";
+    src: url("fonts/NeueHaasDisplayRomanItalic.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Light Italic";
+    src: url("fonts/NeueHaasDisplayLightItalic.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Light";
+    src: url("fonts/NeueHaasDisplayLight.ttf") format("truetype");
+}
+
+.name {
+    font-family: "Regular";
+}
+
+.section-title {
+    font-family: "Medium";
+}
+
+.project-title {
+    font-family: "Regular";
+}
+
+.about-me-text {
+    font-family: "Regular";
+}
+
+.project-description {
+    font-family: "Regular";
+}
+
+.role-title {
+    font-family: "Regular";
+}
+
+.role-company {
+    font-family: "Light";
+}
+
+.role-text {
+    font-family: "Regular";
+}

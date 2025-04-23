@@ -1,0 +1,82 @@
+:root {
+    --dark: #11202c;
+    --light: #e4e4e4;
+    --accent: #d62c2c;
+    --black: #11181d;
+}
+
+.fc-light {
+    color: var(--light);
+}
+
+.fc-accent {
+    color: var(--accent);
+}
+
+.fc-green{
+    color: rgb(3, 145, 86);
+}
+
+.landing {
+    background-color: var(--dark);
+}
+
+
+.socials-tray {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials-icon {
+    color: white;
+}
+
+.socials-icon {
+    transition: 0.3s;
+}
+
+.socials-icon:hover {
+    color: var(--accent);
+}
+
+
+.temp {
+    background-color: var(--light);
+}
+
+.project-title{
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.project-title:hover {
+    color: var(--accent);
+}
+
+.thumbnail-container {
+    background-color: var(--accent);
+}
+
+
+.roles-section {
+    background-color: var(--black);
+}
+
+.role-card {
+    background-color: var(--dark);
+}
+
+.about-me-text::selection,
+.project-description::selection,
+.role-title::selection,
+.role-company::selection,
+.role-text::selection {
+    background-color: var(--accent);
+}
+
+.research-section{
+    background-color: var(--dark);
+}
+
+.overlay{
+    background-color: #11202c;
+}
