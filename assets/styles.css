@@ -95,7 +95,6 @@ div {
     max-width: 800px;
     padding: 2.5rem;
     flex-direction: column;
-    border-radius: 50px;
 }
 
 .role-title {
