@@ -75,6 +75,11 @@ div {
     max-height: 400px;
 }
 
+.thumbnail-container:hover {
+    cursor: pointer;
+}
+
+
 .thumbnail-container>img {
     object-fit: cover;
 }
