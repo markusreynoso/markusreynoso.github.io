@@ -42,7 +42,6 @@ div {
 .name {
     z-index: 1;
     user-select: none;
-    margin-bottom: 8rem;
     letter-spacing: -0.03em;
     text-align: center;
     font-size: 3em;
