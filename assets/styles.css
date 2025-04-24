@@ -32,6 +32,13 @@ div {
     justify-content: center;
 }
 
+.koi-graphic {
+    position: absolute;
+    z-index: -1;
+    scale: 0.4;
+    pointer-events: none;
+}
+
 .name {
     z-index: 1;
     user-select: none;
@@ -127,9 +134,10 @@ div {
     z-index: 2;
 }
 
-.overlay{
+.overlay {
     z-index: 1;
 }
+
 @media (max-width: 576px) {
 
     .name,
@@ -140,6 +148,8 @@ div {
     .project-title {
         font-size: 1.5rem;
     }
+
+
 }
 
 /* Small devices (≥576px) — Bootstrap `sm` */
@@ -155,6 +165,11 @@ div {
         font-size: 1.2rem;
         text-align: justify;
     }
+
+    .koi-graphic {
+        scale: 0.68;
+        rotate: calc(60deg + 180deg);
+    }
 }
 
 /* Medium devices (≥768px) — Bootstrap `md` */
@@ -168,6 +183,10 @@ div {
     .project-title {
         font-size: 4rem;
     }
+
+    .koi-graphic {
+        scale: 0.5;
+    }
 }
 
 /* Large devices (≥992px) — Bootstrap `lg` */
@@ -179,6 +198,10 @@ div {
 
     .role-title {
         font-size: 2.5rem;
+    }
+
+    .koi-graphic {
+        scale: 0.65;
     }
 }
 
