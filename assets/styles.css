@@ -29,7 +29,7 @@ div {
     width: 100vw;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .koi-graphic {
@@ -60,6 +60,13 @@ div {
 .temp {
     flex-direction: column;
     width: 100vw;
+}
+
+#about-me-title,
+#projects-title,
+#roles-title,
+#research-title {
+    scroll-margin-top: 40px;
 }
 
 .project-title {
