@@ -1,6 +1,6 @@
-.landing>* {
+.name {
     opacity: 0;
-    animation: fade-in 1.5s linear 0.5s forwards;
+    animation: fade-in 1.5s linear 1s forwards;
 }
 
 @keyframes fade-in {
@@ -24,8 +24,23 @@
     }
 }
 
-.socials-tray:hover{
+.socials-tray:hover {
     background-color: rgba(34, 34, 34, 0.8);
+}
+
+.reveal>* {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0%;
+    animation: title-reveal ease-out forwards;
+    animation-timeline: view(10%);
+    animation-range: contain;
+}
+
+@keyframes title-reveal {
+    to {
+        width: 100%;
+    }
 }
 
 .role-card {

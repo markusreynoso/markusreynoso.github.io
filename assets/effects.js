@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#coming-soon-effect").hover(
+    $("#research-title").hover(
         function () {
             $(this).text("Research")
         },

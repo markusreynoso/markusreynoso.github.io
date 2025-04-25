@@ -59,6 +59,10 @@
     color: var(--accent);
 }
 
+.project-title:hover::selection{
+    background-color: var(--dark);
+}
+
 .thumbnail-container {
     background-color: var(--accent);
 }
@@ -73,6 +77,7 @@
 }
 
 .about-me-text::selection,
+.project-title::selection,
 .project-description::selection,
 .role-title::selection,
 .role-company::selection,
