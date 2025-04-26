@@ -31,15 +31,15 @@
 .reveal>* {
     overflow: hidden;
     white-space: nowrap;
-    width: 0%;
+    height: 0%;
     animation: title-reveal ease-out forwards;
-    animation-timeline: view(10%);
+    animation-timeline: view(10px);
     animation-range: contain;
 }
 
 @keyframes title-reveal {
     to {
-        width: 100%;
+        height: 100%;
     }
 }
 
