@@ -76,19 +76,15 @@
     background-color: var(--dark);
 }
 
-.about-me-text::selection,
-.project-title::selection,
-.project-description::selection,
-.role-title::selection,
-.role-company::selection,
-.role-text::selection {
+*::selection {
     background-color: var(--accent);
 }
 
-.research-section{
+.others-section{
     background-color: var(--dark);
 }
 
 .overlay{
     background-color: #11202c;
 }
+

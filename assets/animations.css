@@ -71,5 +71,17 @@
 }
 
 .thumbnail-container:hover {
-    border: var(--accent) 3px solid;
+    box-shadow: 0 0 0 3px var(--accent);
+}
+
+.thumbnail-container {
+    transition: 0.3s linear;
+}
+
+.others-card:hover {
+    box-shadow: 0 0 0 2px var(--accent);
+}
+
+.others-card {
+    transition: 0.3s linear;
 }

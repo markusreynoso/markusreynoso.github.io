@@ -32,6 +32,10 @@ div {
     justify-content: space-around;
 }
 
+p.navigation {
+    user-select: none;
+}
+
 .koi-graphic {
     position: absolute;
     z-index: -1;
@@ -64,7 +68,7 @@ div {
 #about-me-title,
 #projects-title,
 #roles-title,
-#research-title {
+#others-title {
     scroll-margin-top: 40px;
 }
 
@@ -126,11 +130,10 @@ div {
     text-align: justify;
 }
 
-.research-section {
+.others-section {
     width: 100vw;
-    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -141,6 +144,13 @@ div {
 
 .overlay {
     z-index: 1;
+}
+
+.others-card{
+    border-radius: 25px;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 576px) {
@@ -154,7 +164,9 @@ div {
         font-size: 1.5rem;
     }
 
-
+    .others-row {
+        height: 100px;
+    }
 }
 
 /* Small devices (≥576px) — Bootstrap `sm` */
@@ -175,6 +187,11 @@ div {
         scale: 0.68;
         rotate: calc(60deg + 180deg);
     }
+
+    .others-row {
+        height: 200px;
+    }
+
 }
 
 /* Medium devices (≥768px) — Bootstrap `md` */
@@ -192,6 +209,8 @@ div {
     .koi-graphic {
         scale: 0.5;
     }
+
+
 }
 
 /* Large devices (≥992px) — Bootstrap `lg` */
@@ -207,6 +226,10 @@ div {
 
     .koi-graphic {
         scale: 0.65;
+    }
+
+    .others-row {
+        height: 400px;
     }
 }
 
