@@ -88,3 +88,6 @@
     background-color: #11202c;
 }
 
+.others-card{
+    background-color: var(--black);
+}

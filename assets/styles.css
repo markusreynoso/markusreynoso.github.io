@@ -147,10 +147,17 @@ p.navigation {
 }
 
 .others-card{
+    position: relative;
     border-radius: 25px;
     overflow:hidden;
     display: flex;
     flex-direction: column;
+}
+
+.others-card-title{
+    position: absolute;
+    bottom: 10px;
+    font-size: 2rem;
 }
 
 @media (max-width: 576px) {
