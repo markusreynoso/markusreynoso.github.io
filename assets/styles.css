@@ -60,7 +60,7 @@ p.navigation {
     border-radius: 15px;
 }
 
-.temp {
+.projects-section {
     flex-direction: column;
     width: 100vw;
 }
@@ -72,7 +72,8 @@ p.navigation {
     scroll-margin-top: 40px;
 }
 
-.project-title {
+.project-title,
+.other-project-title {
     font-size: 3rem;
     letter-spacing: -0.03em;
 }
@@ -84,7 +85,7 @@ p.navigation {
 }
 
 .bi-arrow-right-short {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .thumbnail-container {
@@ -146,19 +147,27 @@ p.navigation {
     z-index: 1;
 }
 
-.others-card{
-    position: relative;
-    border-radius: 25px;
-    overflow:hidden;
+.others-row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    cursor: pointer;
 }
 
-.others-card-title{
-    position: absolute;
-    bottom: 10px;
-    font-size: 2rem;
+
+#cursor-image {
+    position: fixed;
+    pointer-events: none;
+    width: 30vw;
+    z-index: 1000;
 }
+
+.hidden {
+    display: none;
+}
+
 
 @media (max-width: 576px) {
 
@@ -167,13 +176,11 @@ p.navigation {
         font-size: 3rem;
     }
 
-    .project-title {
+    .project-title,
+    .other-project-title {
         font-size: 1.5rem;
     }
 
-    .others-row {
-        height: 100px;
-    }
 }
 
 /* Small devices (≥576px) — Bootstrap `sm` */
@@ -195,9 +202,6 @@ p.navigation {
         rotate: calc(60deg + 180deg);
     }
 
-    .others-row {
-        height: 200px;
-    }
 
 }
 
@@ -209,7 +213,8 @@ p.navigation {
         font-size: 5rem;
     }
 
-    .project-title {
+    .project-title,
+    .other-project-title {
         font-size: 4rem;
     }
 
@@ -235,9 +240,6 @@ p.navigation {
         scale: 0.65;
     }
 
-    .others-row {
-        height: 400px;
-    }
 }
 
 /* Extra large devices (≥1200px) — Bootstrap `xl` */

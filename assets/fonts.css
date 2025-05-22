@@ -25,7 +25,14 @@
     src: url("fonts/NeueHaasDisplayLight.ttf") format("truetype");
 }
 
-.name {
+
+.name,
+.about-me-text,
+.project-title,
+.project-description,
+.role-title,
+.role-text,
+.other-project-title {
     font-family: "Regular";
 }
 
@@ -33,34 +40,8 @@
     font-family: "Medium";
 }
 
-.project-title {
-    font-family: "Regular";
-}
-
-.about-me-text {
-    font-family: "Regular";
-}
-
-.project-description {
-    font-family: "Regular";
-}
-
-.role-title {
-    font-family: "Regular";
-}
-
-.role-company, .navigation {
+.txt-light,
+.role-company,
+.navigation {
     font-family: "Light";
-}
-
-.role-text {
-    font-family: "Regular";
-}
-
-.txt-light{
-    font-family: "Light";
-}
-
-.others-card-title{
-    font-family: "Regular";
 }
