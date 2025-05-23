@@ -91,10 +91,15 @@
 }
 
 .others-row {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid var(--light);
+
+}
+
+.others-row:last-of-type {
+    border-bottom: 1px solid var(--light);
 }
 
 .bi-arrow-right-short {
-    color: var(--accent);
+    color: var(--light);
 }
+

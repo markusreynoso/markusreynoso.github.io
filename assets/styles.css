@@ -150,7 +150,7 @@ p.navigation {
 .others-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 1rem 0;
     cursor: pointer;

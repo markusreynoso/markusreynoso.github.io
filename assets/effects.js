@@ -32,19 +32,19 @@ $(document).ready(function () {
 
 
     // Display the right arrow when hovering on other project
-    $('.others-row').on('mouseenter', function () {
-        if (window.innerWidth >= 768) {
-            $(this).find('.other-project-title').toggleClass('fc-accent');
-            $(this).find('.bi-arrow-right-short').toggleClass('hidden');
-        }
-    });
+    // $('.others-row').on('mouseenter', function () {
+    //     if (window.innerWidth >= 768) {
+    //         $(this).find('.other-project-title').toggleClass('fc-accent');
+    //         // $(this).find('.bi-arrow-right-short').toggleClass('hidden');
+    //     }
+    // });
 
-    $('.others-row').on('mouseleave', function () {
-        if (window.innerWidth >= 768) {
-            $(this).find('.other-project-title').toggleClass('fc-accent');
-            $(this).find('.bi-arrow-right-short').toggleClass('hidden');
-        }
-    });
+    // $('.others-row').on('mouseleave', function () {
+    //     if (window.innerWidth >= 768) {
+    //         $(this).find('.other-project-title').toggleClass('fc-accent');
+    //         // $(this).find('.bi-arrow-right-short').toggleClass('hidden');
+    //     }
+    // });
 
 
 })

@@ -1,3 +1,5 @@
+/* Name fade in */
+
 .name {
     opacity: 0;
     animation: fade-in 1.5s linear 1s forwards;
@@ -12,6 +14,8 @@
         opacity: 100%;
     }
 }
+
+/* Parallax  */
 
 .bg {
     animation: parallax-bg linear;
@@ -78,10 +82,17 @@
     transition: 0.3s linear;
 }
 
-.others-card:hover {
-    box-shadow: 0 0 0 2px var(--accent);
+.bi-arrow-right-short {
+    opacity: 0;
+    transition: 0.3s;
 }
 
-.others-card {
-    transition: 0.3s linear;
+.others-row:hover .bi-arrow-right-short {
+    opacity: 100%;
+    color: var(--accent);
+    transform: translateX(20px);
+}
+
+.others-row:hover .other-project-title {
+    color: var(--accent);
 }
