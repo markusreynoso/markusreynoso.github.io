@@ -160,6 +160,7 @@ p.navigation {
 #cursor-image {
     position: fixed;
     pointer-events: none;
+    user-select: none;
     width: 30vw;
     z-index: 1000;
 }
