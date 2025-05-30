@@ -96,3 +96,7 @@
 .others-row:hover .other-project-title {
     color: var(--accent);
 }
+
+.other-project-title{
+    transition: 0.2s linear;
+}
