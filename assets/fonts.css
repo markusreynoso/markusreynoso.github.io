@@ -25,6 +25,22 @@
     src: url("fonts/NeueHaasDisplayLight.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Seasons Light";
+    src: url("fonts/The Seasons Light.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Seasons Regular";
+    src: url("fonts/The Seasons Regular.otf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Seasons Bold";
+    src: url("fonts/The Seasons Bold.otf") format("truetype");
+}
+
 
 .name,
 .about-me-text,
@@ -44,4 +60,13 @@
 .role-company,
 .navigation {
     font-family: "Light";
+}
+
+
+.name{
+    font-family: "Seasons Light";
+}
+
+.section-title {
+    font-family: "Seasons Bold";
 }
