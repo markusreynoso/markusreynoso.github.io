@@ -8,8 +8,12 @@
     <title>Portfolio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="icon" href="assets/images/Logo 2.png">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
@@ -98,7 +102,7 @@
                 <div class="flex-column mb-5">
                     <div class="flex-row justify-content-start align-items-center">
                         <h3 class="project-title mb-md-5"
-                            data-url="https://github.com/markusreynoso/classification-neural-network">Cancer Malignancy
+                            data-url="https://github.com/markusreynoso/thesis">Cancer Malignancy
                             Prediction</h3>
                     </div>
 
@@ -116,23 +120,23 @@
                                 </div>
                             </div>
                             <p class="col-12 col-lg-7 project-description ">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur veniam consequuntur
-                                repellendus quis officia sed accusantium dignissimos vel eligendi id, quae eos!
-                                Laboriosam, alias quas. Molestiae possimus at facere odit quibusdam doloribus nisi, id
-                                sed perspiciatis rerum sapiente quo repellat eos nihil et soluta amet optio reiciendis
-                                minus sunt est! Nam laborum possimus, vero eaque veritatis totam quia consectetur
-                                repudiandae adipisci cupiditate nemo quidem assumenda aspernatur omnis iusto praesentium
-                                quo temporibus voluptas voluptates nisi unde autem tempore? Nulla commodi deserunt
-                                voluptates sunt nam quo, officia voluptatibus aliquid dolor non ipsum magni, ducimus
-                                fugiat modi ipsam tempore ipsa iste neque unde est odit aliquam? Non atque saepe
-                                molestiae.
+                                Neural networks offer exceptional predictive power at the expense of huge computational
+                                costs. Oversimplifying things, a neural network basically performs addition and
+                                multiplication on a large set of numbers. Wouldn't it be so much simpler and less
+                                computationally-taxing if some of these numbers were small, if not exactly 0? In that
+                                case, we would be adding and multiplying 0's which is much easier.
+                                For my thesis, I extended the study of de Resende et al. (2024) which made use
+                                of regularization terms based on the \(l_0\) and \(l_2\) norms which "encourages"
+                                weights to tend towards 0 during training, and extended it to the Adam optimization
+                                algorithm. The final network achieved a 98% testing accuracy while boasting sparsity,
+                                having 32% of its weights be 0's
                             </p>
                         </div>
 
                     </div>
 
                     <div class="thumbnail-container col-12 mt-3 position-relative flex-column justify-content-center align-items-center"
-                        data-url="https://github.com/markusreynoso/classification-neural-network">
+                        data-url="https://github.com/markusreynoso/thesis">
                         <i class="bi bi-arrow-right position-absolute fc-light"></i>
                         <div class="overlay position-absolute w-100 h-100"></div>
                         <img class="img-fluid" src="assets/images/cancer-graphic.png" alt="">
@@ -304,7 +308,7 @@
             <div class="col-12 col-md-6 my-3">
                 <div class="role-card" style="background-color: #0e2dac;">
                     <h3 class="role-title fc-light">
-                        Data Operations Intern
+                        Data Engineering Intern
                     </h3>
                     <div class="flex-row justify-content-between mb-4">
                         <h2 class="role-company fc-light">
@@ -317,14 +321,11 @@
                     </div>
 
                     <p class="role-text fc-light">
-                        After a year working as a Junior Officer in the organization, I got promoted to AVP.
-                        My
-                        tasks in terms of making publicity materials remained generally the same, however, I
-                        now
-                        had the opportunity to lead the new Junior Officers who joined the org under our
-                        department. This allowed me to take charge of some projects and share what I learned
-                        to
-                        my juniors in order to serve the organization's needs.
+                        This was my first internship role. My tasks focused on creating data cleaning,
+                        transformation, and validation pipelines as well as automating processes with the company's LLM
+                        service
+                        subscriptions in order to reallocate manpower for manual QA. I also gave suggestions in
+                        reorganizing the team's workflow to fully capitalize on the automation.
                     </p>
                 </div>
             </div>
