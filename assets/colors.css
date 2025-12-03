@@ -13,7 +13,7 @@
     color: var(--accent);
 }
 
-.fc-green{
+.fc-green {
     color: rgb(3, 145, 86);
 }
 
@@ -46,11 +46,11 @@
 }
 
 
-.temp {
+.projects-section {
     background-color: var(--light);
 }
 
-.project-title{
+.project-title {
     cursor: pointer;
     transition: 0.3s ease-in;
 }
@@ -59,7 +59,7 @@
     color: var(--accent);
 }
 
-.project-title:hover::selection{
+.project-title:hover::selection {
     background-color: var(--dark);
 }
 
@@ -76,19 +76,30 @@
     background-color: var(--dark);
 }
 
-.about-me-text::selection,
-.project-title::selection,
-.project-description::selection,
-.role-title::selection,
-.role-company::selection,
-.role-text::selection {
+*::selection {
     background-color: var(--accent);
 }
 
-.research-section{
+
+
+.overlay {
+    background-color: #11202c;
+}
+
+.others-section {
     background-color: var(--dark);
 }
 
-.overlay{
-    background-color: #11202c;
+.others-row {
+    border-top: 1px solid var(--light);
+
 }
+
+.others-row:last-of-type {
+    border-bottom: 1px solid var(--light);
+}
+
+.bi-arrow-right-short {
+    color: var(--light);
+}
+

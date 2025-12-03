@@ -1,3 +1,5 @@
+/* Name fade in */
+
 .name {
     opacity: 0;
     animation: fade-in 1.5s linear 1s forwards;
@@ -12,6 +14,8 @@
         opacity: 100%;
     }
 }
+
+/* Parallax  */
 
 .bg {
     animation: parallax-bg linear;
@@ -71,5 +75,28 @@
 }
 
 .thumbnail-container:hover {
-    border: var(--accent) 3px solid;
+    box-shadow: 0 0 0 3px var(--accent);
+}
+
+.thumbnail-container {
+    transition: 0.3s linear;
+}
+
+.bi-arrow-right-short {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.others-row:hover .bi-arrow-right-short {
+    opacity: 100%;
+    color: var(--accent);
+    transform: translateX(20px);
+}
+
+.others-row:hover .other-project-title {
+    color: var(--accent);
+}
+
+.other-project-title{
+    transition: 0.2s linear;
 }

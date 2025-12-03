@@ -5,11 +5,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio</title>
+    <title>Markus Reynoso</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="icon" href="assets/images/Logo 2.png">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
@@ -33,19 +37,19 @@
                 <a href="#about-me-title" class=" text-decoration-none">
                     <p class="navigation fc-light">About</p>
                 </a>
-                <a href="#projects-title" class=" text-decoration-none">
-                    <p class="navigation fc-light">Projects</p>
+                <a href="#featured-title" class=" text-decoration-none">
+                    <p class="navigation fc-light">Featured</p>
                 </a>
                 <a href="#roles-title" class=" text-decoration-none">
                     <p class="navigation fc-light">Roles</p>
                 </a>
-                <a href="#research-title" class=" text-decoration-none">
-                    <p class="navigation fc-light">Research</p>
+                <a href="#others-title" class=" text-decoration-none">
+                    <p class="navigation fc-light">Others</p>
                 </a>
             </div>
             <h1 class="name fc-light">
-                Markus <br>
-                Reynoso
+                MARKUS <br>
+                REYNOSO
             </h1>
 
 
@@ -58,7 +62,7 @@
             <img class="koi-graphic" src="assets/images/koi.png" alt="">
         </div>
 
-        <div class="temp fg p-3 p-md-5">
+        <div class="projects-section fg p-3 p-md-5">
 
             <div class="container flex-row justify-content-end my-5">
                 <div class="reveal">
@@ -72,11 +76,12 @@
                 <div class="col-0 col-md-3"></div>
                 <div class="col-12 col-md-9">
                     <p class="about-me-text">
-                        Hey! I'm Markus. I'm a 4th year undergraduate student taking BS Mathematics with Specialization
-                        in Computer Applications in De La Salle University - Manila. I
-                        am passionate about Mathematics, Artificial Intelligence, and Graphic Design, and I made this
-                        personal website so that I may share the fruits of my passion. In my free time, I also do
-                        illustrations and graphic design.
+                        Hey! I'm Markus. I graduated summa cum laude from De La Salle University - Manila with a degree
+                        in BS Mathematics with Specialization
+                        in Computer Applications and I'm currently looking for employment opportunities wherein I can
+                        utilize my skills
+                        in Mathematics, Programming, and Analysis. I made this
+                        personal website so that I may share the fruits of my passion.
                     </p>
                 </div>
             </div>
@@ -86,8 +91,8 @@
 
             <div class="container mb-md-5">
                 <div class="reveal">
-                    <h2 id="projects-title" class="section-title mb-5">
-                        Projects
+                    <h2 id="featured-title" class="section-title mb-5">
+                        Featured Work
                     </h2>
                 </div>
             </div>
@@ -95,6 +100,55 @@
             <div class="projects container flex-column align-items-center">
 
                 <div class="flex-column mb-5">
+                    <div class="flex-row justify-content-start align-items-center">
+                        <h3 class="project-title mb-md-5" data-url="https://github.com/markusreynoso/thesis">Cancer
+                            Malignancy
+                            Prediction</h3>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="flex-column flex-lg-row">
+                            <div class="col-12 col-lg-5 flex-row mb-3 mb-lg-0">
+                                <div class="project-info flex-column gap-0 me-5">
+                                    <p class="project-description my-0">Task: </p>
+                                    <p class="project-description my-0">Predictive Modeling</p>
+                                </div>
+
+                                <div class="project-info flex-column gap-0 ms-5">
+                                    <p class="project-description my-0">Type: </p>
+                                    <p class="project-description my-0"> Academic</p>
+                                </div>
+                            </div>
+                            <p class="col-12 col-lg-7 project-description ">
+                                Neural networks offer exceptional predictive power at the expense of huge computational
+                                costs. Oversimplifying things, a neural network basically performs addition and
+                                multiplication on a large set of numbers. Wouldn't it be so much simpler and less
+                                computationally-taxing if some of these numbers were small, if not exactly 0? In that
+                                case, we would be adding and multiplying 0's which is much easier.
+                                For my thesis, I extended the study of de Resende et al. (2024) which made use
+                                of regularization terms based on the \(l_0\) and \(l_2\) norms which "encourages"
+                                weights to tend towards 0 during training, and extended it to the Adam optimization
+                                algorithm. The final network achieved a 98% testing accuracy while boasting sparsity,
+                                having 61% of its weights be 0's
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="thumbnail-container col-12 mt-3 position-relative flex-column justify-content-center align-items-center"
+                        data-url="https://github.com/markusreynoso/thesis">
+                        <i class="bi bi-arrow-right position-absolute fc-light"></i>
+                        <div class="overlay position-absolute w-100 h-100"></div>
+                        <img class="img-fluid" src="assets/images/cancer-graphic.png" alt="">
+                    </div>
+
+
+                </div>
+
+                <div class="spacer my-3 my-md-5"></div>
+                <div class="spacer my-0 my-md-4"></div>
+
+                <!-- <div class="flex-column mb-5">
                     <div class="flex-row justify-content-start align-items-center">
                         <h3 class="project-title mb-md-5"
                             data-url="https://github.com/markusreynoso/classification-neural-network">Neural Network
@@ -105,8 +159,8 @@
                         <div class="flex-column flex-lg-row">
                             <div class="col-12 col-lg-5 flex-row mb-3 mb-lg-0">
                                 <div class="project-info flex-column gap-0 me-5">
-                                    <p class="project-description my-0">Field: </p>
-                                    <p class="project-description my-0"> Artificial Intelligence</p>
+                                    <p class="project-description my-0">Task: </p>
+                                    <p class="project-description my-0"> Predictive Modeling</p>
                                 </div>
 
                                 <div class="project-info flex-column gap-0 ms-5">
@@ -139,12 +193,12 @@
                     </div>
 
 
-                </div>
+                </div> -->
 
-                <div class="spacer my-3 my-md-5"></div>
-                <div class="spacer my-0 my-md-4"></div>
+                <!-- <div class="spacer my-3 my-md-5"></div>
+                <div class="spacer my-0 my-md-4"></div> -->
 
-                <div class="flex-column mb-5">
+                <!-- <div class="flex-column mb-5">
                     <div class="flex-row justify-content-start align-items-center">
                         <h3 class="project-title mb-md-5"
                             data-url="https://github.com/markusreynoso/datanvi_final_proj">House Pricing -
@@ -155,8 +209,8 @@
                         <div class="flex-column flex-lg-row">
                             <div class="col-12 col-lg-5 flex-row mb-3 mb-lg-0">
                                 <div class="project-info flex-column gap-0 me-5">
-                                    <p class="project-description my-0">Field: </p>
-                                    <p class="project-description my-0">Data Science</p>
+                                    <p class="project-description my-0">Task: </p>
+                                    <p class="project-description my-0">Data Visualization</p>
                                 </div>
 
                                 <div class="project-info flex-column gap-0 ms-5">
@@ -170,8 +224,7 @@
                                 hypothetical target audience of our choice. My group decided to combine house pricing
                                 data with Philippine earthquake data to create a dashboard that can aid prospective
                                 home-buyers in their decision-making, allowing them to take price and safety into
-                                account. This project is currently in progress and is unavailable to view at the moment.
-                                I'm currently making some minor tweaks.
+                                account.
                             </p>
                         </div>
 
@@ -188,7 +241,7 @@
                 </div>
 
                 <div class="spacer my-3 my-md-5"></div>
-                <div class="spacer my-0 my-md-4"></div>
+                <div class="spacer my-0 my-md-4"></div> -->
 
                 <div class="flex-column mb-5">
                     <div class="flex-row justify-content-start align-items-center">
@@ -201,8 +254,8 @@
                         <div class="flex-column flex-lg-row">
                             <div class="col-12 col-lg-5 flex-row mb-3 mb-lg-0">
                                 <div class="project-info flex-column gap-0 me-5">
-                                    <p class="project-description my-0">Field: </p>
-                                    <p class="project-description my-0">Data Science</p>
+                                    <p class="project-description my-0">Task: </p>
+                                    <p class="project-description my-0">Data Visualization</p>
                                 </div>
 
                                 <div class="project-info flex-column gap-0 ms-5">
@@ -211,12 +264,13 @@
                                 </div>
                             </div>
                             <p class="col-12 col-lg-7 project-description ">
-                                I enjoyed creating the Earthquake-House Price Dashboard for our class so I decided to
-                                make another dashboard during the break just for fun. I settled with a dataset about the
-                                life expectancy in different countries along with some related health and economic
-                                statistics over the period of more than ten years. This was more fun to make since I
-                                didn't feel pressured from a strict deadline and a GPA requirement which made this one
-                                look more aesthetically pleasing, at least for me.
+                                In order to hone my skills in dashboard creation, I decided to make one just for fun. I
+                                settled on a dataset about life expectancy across different countries, along with
+                                related health and economic indicators spanning several years. While the project
+                                began as a personal exercise, the resulting dashboard offers a clear view of long-term
+                                trends that could support data-driven decision making—such as identifying factors linked
+                                to improved public health outcomes, spotting countries with emerging risks, and
+                                comparing how economic conditions correlate with life expectancy over time
                             </p>
                         </div>
 
@@ -235,54 +289,6 @@
                 <div class="spacer my-3 my-md-5"></div>
                 <div class="spacer my-0 my-md-4"></div>
 
-                <div class="flex-column mb-5">
-                    <div class="flex-row justify-content-start align-items-center">
-                        <h3 class="project-title mb-md-5" data-url="https://github.com/markusreynoso/sokoban-solver">
-                            Sokoban Solver
-                        </h3>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="flex-column flex-lg-row">
-                            <div class="col-12 col-lg-5 flex-row mb-3 mb-lg-0">
-                                <div class="project-info flex-column gap-0 me-5">
-                                    <p class="project-description my-0">Field: </p>
-                                    <p class="project-description my-0">Artificial Intelligence</p>
-                                </div>
-
-                                <div class="project-info flex-column gap-0 ms-5">
-                                    <p class="project-description my-0">Type: </p>
-                                    <p class="project-description my-0">Academic</p>
-                                </div>
-                            </div>
-                            <p class="col-12 col-lg-7 project-description ">
-                                Sokoban is a classic puzzle video game where the player pushes some objects, trying to
-                                get them to designated tiles, often in the context of a worker pushing crates in a
-                                warehouse. For our Introduction to Artificial Intelligence class, we were tasked to
-                                create a bot that could solve some simple Sokoban maps under a reasonable amount of
-                                time. The program is fed a text file containing the containing the layout of the map in
-                                Sokoban notation. and is expected to return a string of characters that denote the move
-                                sequence to solve the puzzle. Sokoban was proven to be NP-Hard and PSPACE-Complete. That
-                                program is one of my favorite outputs throughout university because it was daunting at
-                                the start and incredibly rewarding at the end. I loved it so much that I made a GUI for
-                                it in my own time.
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="thumbnail-container col-12 mt-3 position-relative flex-column justify-content-center align-items-center"
-                        data-url="https://github.com/markusreynoso/sokoban-solver">
-                        <i class="bi bi-arrow-right position-absolute fc-light"></i>
-                        <div class="overlay position-absolute w-100 h-100"></div>
-                        <img class="img-fluid" src="assets/images/sokoban-graphic.png" alt="">
-                    </div>
-
-
-                </div>
-
-                <div class="spacer my-3 my-md-5"></div>
-                <div class="spacer my-0 my-md-4"></div>
             </div>
 
 
@@ -301,21 +307,46 @@
 
         <div class="row col-12">
             <div class="col-12 col-md-6 my-3">
-                <div class="role-card">
-                    <h3 class="role-title fc-green">
-                        AVP for Publicity
+                <div class="role-card" style="background-color: #0e2dac;">
+                    <h3 class="role-title fc-light">
+                        Data Engineering Intern
                     </h3>
                     <div class="flex-row justify-content-between mb-4">
-                        <h2 class="role-company fc-green">
-                            DLSU Math Circle
+                        <h2 class="role-company fc-light">
+                            MSCI
                         </h2>
 
-                        <h2 class="role-company fc-green">
-                            2022-2023
+                        <h2 class="role-company fc-light">
+                            2025
                         </h2>
                     </div>
 
                     <p class="role-text fc-light">
+                        This was my first internship role. My tasks focused on creating data cleaning,
+                        transformation, and validation pipelines in order to reallocate manpower for manual QA. Apart
+                        from the technical skills, this internship also gave me domain knowledge by exposing me to ESG
+                        concepts, Corporate Governance practices, and the workings of the financial world, including
+                        investment principles, market indices, and how data underpins decision-making in asset
+                        management.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 my-3">
+                <div class="role-card" style="background-color: #06a891;">
+                    <h3 class="role-title fc-dark">
+                        AVP for Publicity
+                    </h3>
+                    <div class="flex-row justify-content-between mb-4">
+                        <h2 class="role-company fc-dark">
+                            DLSU Math Circle
+                        </h2>
+
+                        <h2 class="role-company fc-dark">
+                            2022-2023
+                        </h2>
+                    </div>
+
+                    <p class="role-text fc-dark">
                         After a year working as a Junior Officer in the organization, I got promoted to AVP.
                         My
                         tasks in terms of making publicity materials remained generally the same, however, I
@@ -327,22 +358,25 @@
                     </p>
                 </div>
             </div>
+        </div>
+
+        <div class="row col-12">
             <div class="col-12 col-md-6 my-3">
-                <div class="role-card">
-                    <h3 class="role-title fc-green">
+                <div class="role-card" style="background-color: #06a891;">
+                    <h3 class="role-title fc-dark">
                         Junior Officer for Publicity
                     </h3>
                     <div class="flex-row justify-content-between mb-4">
-                        <h2 class="role-company fc-green">
+                        <h2 class="role-company fc-dark">
                             DLSU Math Circle
                         </h2>
 
-                        <h2 class="role-company fc-green">
+                        <h2 class="role-company fc-dark">
                             2021-2023
                         </h2>
                     </div>
 
-                    <p class="role-text fc-light">
+                    <p class="role-text fc-dark">
                         This was my first org experience in university. I was basically tasked to create
                         publicity materials for the organization's events including competitions, seminars,
                         tutorials etc. For each project, I worked under the guidance of different project
@@ -350,18 +384,60 @@
                         helping them communicate their vision to their target audience through visual
                         materials
                         which were posted on the organization's different social media accounts.
-
                     </p>
                 </div>
+            </div>
+            <div class="col-12 col-md-6 my-3">
+                <!-- Left blank -->
             </div>
         </div>
 
     </div>
 
-    <div class="research-section">
-        <h2 id="research-title" class="section-title fc-accent">
-            Coming Soon
-        </h2>
+    <div class="others-section p-3 p-md-5">
+
+        <div class="container flex-row justify-content-center my-5">
+            <div class="reveal">
+                <h2 id="others-title" class="section-title fc-light">
+                    Other Projects
+                </h2>
+            </div>
+        </div>
+
+        <p class="col-10 text-center txt-light project-description fc-light">
+            Below is a collection of miscellaneous projects, ranging from exploratory builds for fun to pieces created
+            for
+            supplementary learning.
+        </p>
+
+        <div class="spacer my-4"></div>
+
+
+        <img id="cursor-image" class="hidden">
+        <div class="container flex-column align-items-center">
+            <div class="others-row col-10" data-image="sokoban-graphic.png"
+                data-url="https://github.com/markusreynoso/sokoban-solver">
+                <h3 class="other-project-title fc-light">
+                    Sokoban Solver
+                </h3>
+                <i class="bi bi-arrow-right-short d-none d-md-block"></i>
+            </div>
+            <div class="others-row col-10" data-image="mlp-graphic.png"
+                data-url="https://github.com/markusreynoso/classification-neural-network">
+                <h3 class="other-project-title fc-light">
+                    Neural Network from Scratch
+                </h3>
+                <i class="bi bi-arrow-right-short d-none d-md-block"></i>
+            </div>
+            <div class="others-row col-10" data-image="housequake-dashboard-graphic.png"
+                data-url="https://github.com/markusreynoso/datanvi_final_proj">
+                <h3 class="other-project-title fc-light">
+                    House Pricing - Earthquake Interactive Dashboard
+                </h3>
+                <i class="bi bi-arrow-right-short d-none d-md-block"></i>
+            </div>
+        </div>
+        <div class="spacer my-4"></div>
     </div>
 </body>
 

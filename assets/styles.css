@@ -32,6 +32,10 @@ div {
     justify-content: space-around;
 }
 
+p.navigation {
+    user-select: none;
+}
+
 .koi-graphic {
     position: absolute;
     z-index: -1;
@@ -56,19 +60,20 @@ div {
     border-radius: 15px;
 }
 
-.temp {
+.projects-section {
     flex-direction: column;
     width: 100vw;
 }
 
 #about-me-title,
-#projects-title,
+#featured-title,
 #roles-title,
-#research-title {
+#others-title {
     scroll-margin-top: 40px;
 }
 
-.project-title {
+.project-title,
+.other-project-title {
     font-size: 3rem;
     letter-spacing: -0.03em;
 }
@@ -80,7 +85,7 @@ div {
 }
 
 .bi-arrow-right-short {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .thumbnail-container {
@@ -126,11 +131,10 @@ div {
     text-align: justify;
 }
 
-.research-section {
+.others-section {
     width: 100vw;
-    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -143,6 +147,29 @@ div {
     z-index: 1;
 }
 
+.others-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+
+#cursor-image {
+    position: fixed;
+    pointer-events: none;
+    user-select: none;
+    width: 30vw;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+
 @media (max-width: 576px) {
 
     .name,
@@ -150,10 +177,10 @@ div {
         font-size: 3rem;
     }
 
-    .project-title {
+    .project-title,
+    .other-project-title {
         font-size: 1.5rem;
     }
-
 
 }
 
@@ -175,6 +202,8 @@ div {
         scale: 0.68;
         rotate: calc(60deg + 180deg);
     }
+
+
 }
 
 /* Medium devices (≥768px) — Bootstrap `md` */
@@ -185,13 +214,16 @@ div {
         font-size: 5rem;
     }
 
-    .project-title {
+    .project-title,
+    .other-project-title {
         font-size: 4rem;
     }
 
     .koi-graphic {
         scale: 0.5;
     }
+
+
 }
 
 /* Large devices (≥992px) — Bootstrap `lg` */
@@ -208,6 +240,7 @@ div {
     .koi-graphic {
         scale: 0.65;
     }
+
 }
 
 /* Extra large devices (≥1200px) — Bootstrap `xl` */

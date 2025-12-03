@@ -25,7 +25,30 @@
     src: url("fonts/NeueHaasDisplayLight.ttf") format("truetype");
 }
 
-.name {
+@font-face {
+    font-family: "Seasons Light";
+    src: url("fonts/The Seasons Light.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Seasons Regular";
+    src: url("fonts/The Seasons Regular.otf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Seasons Bold";
+    src: url("fonts/The Seasons Bold.otf") format("truetype");
+}
+
+
+.name,
+.about-me-text,
+.project-title,
+.project-description,
+.role-title,
+.role-text,
+.other-project-title {
     font-family: "Regular";
 }
 
@@ -33,26 +56,17 @@
     font-family: "Medium";
 }
 
-.project-title {
-    font-family: "Regular";
-}
-
-.about-me-text {
-    font-family: "Regular";
-}
-
-.project-description {
-    font-family: "Regular";
-}
-
-.role-title {
-    font-family: "Regular";
-}
-
-.role-company, .navigation {
+.txt-light,
+.role-company,
+.navigation {
     font-family: "Light";
 }
 
-.role-text {
-    font-family: "Regular";
+
+.name{
+    font-family: "Seasons Light";
+}
+
+.section-title {
+    font-family: "Seasons Bold";
 }
